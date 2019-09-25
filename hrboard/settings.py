@@ -40,7 +40,6 @@ INSTALLED_APPS = [
 
     'rest_framework',
 
-    'core',
     'works',
 ]
 
@@ -85,6 +84,11 @@ DATABASES = {
     }
 }
 
+LOGIN_REDIRECT_URL = '/'
+
+REST_FRAMEWORK = {
+    'DATE_FORMAT': "%d/%m/%Y",
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
@@ -110,7 +114,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Dhaka'
 
 USE_I18N = True
 

@@ -30,7 +30,7 @@ class Works(models.Model):
         related_name='works_of_user'
     )
     date =  models.DateField()
-    Location = models.IntegerField(
+    location = models.IntegerField(
         choices=[(choice.value, choice.name.replace("_", " ")) for choice in LocationType],
         default=LocationType.INSIDE.value
     )
