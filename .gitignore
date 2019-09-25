@@ -1,0 +1,7 @@
+*.pyc
+*.py.orig
+*.swp
+.idea
+media
+.vscode/
+*.sqlite3
